@@ -1,0 +1,49 @@
+#rk-copy-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 99999;
+  background: #c41e3a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: background 0.2s, transform 0.1s;
+}
+
+#rk-copy-btn:hover {
+  background: #a01830;
+}
+
+#rk-copy-btn:active {
+  transform: scale(0.96);
+}
+
+#rk-copy-btn.rk-copied {
+  background: #2e7d32;
+}
+
+#rk-toast {
+  position: fixed;
+  bottom: 80px;
+  right: 24px;
+  z-index: 99999;
+  background: #333;
+  color: #fff;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 13px;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.2s, transform 0.2s;
+  pointer-events: none;
+}
+
+#rk-toast.rk-toast--visible {
+  opacity: 1;
+  transform: translateY(0);
+}

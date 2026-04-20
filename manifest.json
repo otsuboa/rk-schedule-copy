@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "RubyKaigi Schedule Copy",
+  "version": "1.0.0",
+  "description": "Copy RubyKaigi 2026 schedule in Slack-friendly format",
+  "content_scripts": [
+    {
+      "matches": ["https://rubykaigi.org/2026/schedule/*"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["clipboardWrite", "contextMenus"]
+}
