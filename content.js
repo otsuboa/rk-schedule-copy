@@ -16,7 +16,7 @@ function parseSchedule() {
     const time = timeEl.textContent
       .replace(/\s+/g, " ")
       .trim()
-      .replace(/ \u2013 /g, "\u2013");
+      .replace(/ \u2013 /g, " - ");
 
     const cells = row.querySelectorAll(".c-schedule-table__event");
 
