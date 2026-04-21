@@ -3,7 +3,7 @@
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({
     id: "rk-copy-session",
-    title: "この予定をコピー",
+    title: "Copy this session",
     contexts: ["link"],
     documentUrlPatterns: ["https://rubykaigi.org/2026/schedule/*"],
   });
