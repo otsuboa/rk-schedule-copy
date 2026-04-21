@@ -1,3 +1,5 @@
+## Installation
+
 Download the latest version from the releases page:  
 https://github.com/otsuboa/rk-schedule-copy/releases
 
